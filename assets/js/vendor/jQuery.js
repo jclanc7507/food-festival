@@ -1,3 +1,5 @@
+const createEl = require('./createEl');
+
 /*!
  * jQuery JavaScript Library v3.4.1
  * https://jquery.com/
