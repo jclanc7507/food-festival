@@ -1,4 +1,4 @@
-const APP_PREFIX + 'FoodFest-';
+const APP_PREFIX = 'FoodFest-';
 const VERSION = 'version_01';
 const CACHE_NAME = APP_PREFIX + VERSION;
 
@@ -14,7 +14,7 @@ const FILES_TO_CACHE = [
   "./dist/events.bundle.js",
   "./dist/tickets.bundle.js",
   "./dist/schedule.bundle.js"
-]:
+];
 
 self.addEventListener('install', function(e) {
   e.waitUntil(
@@ -23,6 +23,6 @@ self.addEventListener('install', function(e) {
       return cache.addAll(FILES_TO_CACHE)
     })
   )
-})
+});
 
 // in DevTools, under Application, Make sure that the unregister service workers checkbox is selected
